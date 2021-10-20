@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Figmaland</title>
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./fonts/fonts.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header absolute w-full z-10 left-0 top-0 px-4">
+            <div class="header__container _container flex justify-between items-center my-12">
+                <div class="header__text__logo flex items-center">
+                    <a href="#">Home</a>
+                    <a href="#">Product</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                    <img src="./img/header__logo.svg" alt="">
+                </div>
+                <div class="header__soc flex items-center cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40.99" height="40.99" viewBox="0 0 24 24"
+                        style="fill: rgb(255, 255, 255);transform: ;msFilter:;">
+                        <path
+                            d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z">
+                        </path>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40.99" height="40.99" viewBox="0 0 24 24"
+                        style="fill: rgb(255, 255, 255);transform: ;msFilter:;">
+                        <path
+                            d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h8.615v-6.96h-2.338v-2.725h2.338v-2c0-2.325 1.42-3.592 3.5-3.592.699-.002 1.399.034 2.095.107v2.42h-1.435c-1.128 0-1.348.538-1.348 1.325v1.735h2.697l-.35 2.725h-2.348V21H20a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1z">
+                        </path>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40.99" height="40.99" viewBox="0 0 24 24"
+                        style="fill: rgb(255, 255, 255);transform: ;msFilter:;">
+                        <path
+                            d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM8.339 18.337H5.667v-8.59h2.672v8.59zM7.003 8.574a1.548 1.548 0 1 1 0-3.096 1.548 1.548 0 0 1 0 3.096zm11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387 2.704 0 3.203 1.778 3.203 4.092v4.71z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="nav__mobile_button">
+                    <button class="mobile-menu-button">
+                        <svg class="w-7 h-7" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="mobile-menu hidden absolute top-1 right-12"
+                    style="color: white; background-color: #252B42;">
+                    <a href="#" class="block px-3 py-2 text-base">Home</a>
+                    <a href="#" class="block px-3 py-2 text-base">Product</a>
+                    <a href="#" class="block px-3 py-2 text-base">Pricing</a>
+                    <a href="#" class="block px-3 py-2 text-base">About</a>
+                    <a href="#" class="block px-3 py-2 text-base">Contact</a>
+                </div>
+            </div>
+        </header>
+        <main class="page">
+            <section class="page__start relative">
+                <div class="start__container _container flex flex-col items-center z-10 relative">
+                    <div class="start__title">
+                        The best products <br> start with Figma
+                    </div>
+                    <div class="start__text">
+                        Most calendars are designed for teams. Slate is designed <br> for freelancers
+                    </div>
+                    <div class="start__button">
+                        <a href="" class="btn">Try For Free</a>
+                    </div>
+                </div>
+                <div class="start__bg _ibg">
+                    <img src="./img/header__bg.svg" alt="" class="bg-cover">
+                </div>
+            </section>
+            <section class="page__features">
+                <div class="features__container _container text-center">
+                    <div class="features__title">
+                        Features
+                    </div>
+                    <div class="features__text">
+                        Most calendars are designed for teams. <br>
+                        Slate is designed for freelancers
+                    </div>
+                    <div class="features__columns justify-center">
+                        <div class="features__column flex flex-col items-center">
+                            <div class="features__column__icon">
+                                <img src="./img/icons/features1.svg" alt="">
+                            </div>
+                            <div class="features__column__title">
+                                OpenType features <br>
+                                Variable fonts
+                            </div>
+                            <div class="features__column__text">
+                                Slate helps you see how <br>
+                                many more days you need <br>
+                                to work to reach your <br>
+                                financial goal.
+                            </div>
+                        </div>
+                        <div class="features__column flex flex-col items-center">
+                            <div class="features__column__icon ics2">
+                                <svg width="57" height="50" viewBox="0 0 57 50" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M23.2486 48.65C27.402 47.0167 26.492 42.5134 24.392 39.6667C22.3153 36.75 19.4453 34.7434 16.552 32.8067C14.4876 31.5055 12.6443 29.8829 11.092 28C10.4386 27.23 9.10863 25.8067 10.462 25.5267C11.8386 25.2467 14.2186 26.6 15.432 27.1134C17.5553 28 19.6553 29.0267 21.6153 30.24L23.972 26.2734C20.332 23.87 15.6653 21.7467 11.3253 21.1167C8.85197 20.7434 6.23863 21.2567 5.39863 23.94C4.65197 26.25 5.84197 28.5834 7.1953 30.4034C10.392 34.6734 15.362 36.7267 19.072 40.4134C19.8653 41.1834 20.822 42.0934 21.2886 43.1667C21.7786 44.1934 21.662 44.2634 20.5653 44.2634C17.672 44.2634 14.0553 42 11.6986 40.5067L9.34197 44.4734C12.912 46.6667 18.8853 50.0967 23.2486 48.65ZM49.1253 12.25C49.6386 11.7367 49.6386 10.8967 49.1253 10.4067L46.092 7.37337C45.8476 7.13783 45.5214 7.00623 45.182 7.00623C44.8425 7.00623 44.5164 7.13783 44.272 7.37337L41.892 9.75337L46.7453 14.6067L49.1253 12.25ZM26.1653 25.48V30.3334H31.0186L45.3686 15.9834L40.5153 11.13L26.1653 25.48Z"
+                                        fill="#2091F9" />
+                                </svg>
+                            </div>
+                            <div class="features__column__title">
+                                Design with real data
+                            </div>
+                            <div class="features__column__text">
+                                Slate helps you see how <br>
+                                many more days you need <br>
+                                to work to reach your <br>
+                                financial goal.
+                            </div>
+                        </div>
+                        <div class="features__column flex flex-col items-center">
+                            <div class="features__column__icon">
+                                <img src="./img/icons/features3.svg" alt="">
+                            </div>
+                            <div class="features__column__title">
+                                Fastest way to <br>
+                                take action
+                            </div>
+                            <div class="features__column__text">
+                                Slate helps you see how <br>
+                                many more days you need <br>
+                                to work to reach your <br>
+                                financial goal.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="features__vid">
+                        <img src="./img/features__vid.svg" alt="">
+                    </div>
+                </div>
+            </section>
+            <seciton class="page__light">
+                <div class="light__container _container px-4 lg: px-0">
+                    <div class="light__info">
+                        <div class="light__info__title">
+                            Fastest way to <br>
+                            organize
+                        </div>
+                        <div class="light__info__text">
+                            Most calendars are designed for teams. <br>
+                            Slate is designed for freelancers
+                        </div>
+                        <div class="light__info__text__mobile">
+                            Most calendars are <br>
+                            designed for teams.
+                        </div>
+                        <div class="light__info__btn">
+                            <a href="" class="btn font-bold p-0">
+                                Try For Free
+                            </a>
+                        </div>
+                    </div>
+                    <div class="light__img">
+                        <img src="./img/Frame 18.jpg" alt="">
+                    </div>
+                </div>
+            </seciton>
+            <section class="page__hero">
+                <div class="hero__container _container">
+                    <div class="hero__mobile__text">
+                        <h3>At your fingertips</h3>
+                        <h2>Newsletter </h2>
+                    </div>
+                    <div class="hero__img">
+                        <img src="./img/hero__cheliks.svg" alt="">
+                    </div>
+                    <div class="hero__info">
+                        <div class="hero__info__block">
+                            <div class="hero__top__title">
+                                At your fingertips
+                            </div>
+                            <div class="hero__title">
+                                Lightning fast <br>
+                                prototyping
+                            </div>
+                        </div>
+                        <div class="hero__sub__title">
+                            Subscribe to our Newsletter
+                        </div>
+                        <div class="hero__bot__info">
+                            Available exclusivery on Figmaland
+                        </div>
+                        <div class="hero__form__btn">
+                            <form action="">
+                                <input type="email" placeholder="Your Email">
+                                <button type="submit" class="hero__btn">
+                                    Subscribe
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="page__partners">
+                <div class="partners__container _container">
+                    <div class="partners__title__text text-center">
+                        <h2 class="partners__title">Partners</h2>
+                        <h4 class="partners__text">Most calendars are designed for teams. <br>
+                            Slate is designed for freelancers</h4>
+                    </div>
+                    <div class="partners__client">
+                        <div class="partners__client__item item__clinet">
+                            <div class="item__clinet__title">
+                                Client Name
+                            </div>
+                            <div class="item__clinet__img">
+                                <img src="./img/icons/partners__google.svg" alt="google">
+                            </div>
+                        </div>
+                        <div class="partners__client__item item__clinet">
+                            <div class="item__clinet__title">
+                                Client Name
+                            </div>
+                            <div class="item__clinet__img">
+                                <img src="./img/icons/partners__amazon.jpg" alt="dropbox">
+                            </div>
+                        </div>
+                        <div class="partners__client__item item__clinet">
+                            <div class="item__clinet__title">
+                                Client Name
+                            </div>
+                            <div class="item__clinet__img">
+                                <img src="./img/icons/partners__microsoft.jpg" alt="google">
+                            </div>
+                        </div>
+                        <div class="partners__client__item item__clinet">
+                            <div class="item__clinet__title">
+                                Client Name
+                            </div>
+                            <div class="item__clinet__img">
+                                <img src="./img/icons/partners__uber.jpg" alt="google">
+                            </div>
+                        </div>
+                        <div class="partners__client__item item__clinet">
+                            <div class="item__clinet__title">
+                                Client Name
+                            </div>
+                            <div class="item__clinet__img">
+                                <img src="./img/icons/partners__dropbox.jpg" alt="google">
+                            </div>
+                        </div>
+                        <div class="partners__client__item item__clinet">
+                            <div class="item__clinet__title">
+                                Client Name
+                            </div>
+                            <div class="item__clinet__img">
+                                <img src="./img/icons/partners__google.svg" alt="google">
+                            </div>
+                        </div>
+                        <div class="partners__client__item item__clinet">
+                            <div class="item__clinet__title">
+                                Client Name
+                            </div>
+                            <div class="item__clinet__img">
+                                <img src="./img/icons/partners__uber.jpg" alt="google">
+                            </div>
+                        </div>
+                        <div class="partners__client__item item__clinet">
+                            <div class="item__clinet__title">
+                                Client Name
+                            </div>
+                            <div class="item__clinet__img">
+                                <img src="./img/icons/partners__amazon.jpg" alt="google">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="partners__btn">
+                        <a href="" class="btn">Try For Free</a>
+                    </div>
+                </div>
+            </section>
+            <section class="page__testi">
+                <div class="testi__container _container">
+                    <div class="testi__title">
+                        Testimonials
+                    </div>
+                    <div class="testi__logo">
+                        <img src="./img/icons/IGM.jpg" alt="IGM">
+                    </div>
+                    <div class="testi__text">
+                        Most calendars are designed for teams. Slate is designed for freelancers <br>
+                        who want a simple way to plan their schedule.
+                    </div>
+                    <div class="testi__client">
+                        <p>Organize across</p>
+                        <p>Ui designer</p>
+                    </div>
+                    <a href="testi__btn">More Testimonials</a>
+                </div>
+            </section>
+            <section class="page__pricing">
+                <div class="pricing__container _container">
+                    <div class="pricing__title">
+                        Pricing
+                    </div>
+                    <div class="pricing__text">
+                        Most calendars are designed for teams. <br>
+                        Slate is designed for freelancers
+                    </div>
+                    <div class="pricing__row">
+                        <div class="pricing__item">
+                            <div class="pricing__item__title">
+                                FREE
+                            </div>
+                            <div class="pricing__item__text">
+                                Organize across all <br>
+                                apps by hand
+                            </div>
+                            <div class="pricing__item__price">
+                                0
+                                <div class="pricing__item__price__info">
+                                    $
+                                    <p>Per Month</p>
+                                </div>
+                            </div>
+                            <div class="pricing__item__features">
+                                <a href="#">Pricing Feature</a>
+                                <a href="#">Pricing Feature</a>
+                                <a href="#">Pricing Feature</a>
+                                <a href="#">Pricing Feature</a>
+                                <a href="#">Pricing Feature</a>
+                            </div>
+                            <div class="pricing__item__btn">
+                                <a href="#">Order Now</a>
+                            </div>
+                        </div>
+                        <div class="pricing__item pricing__item__standart">
+                            <div class="pricing__item__title">
+                                STANDARD
+                            </div>
+                            <div class="pricing__item__text">
+                                Organize across all <br>
+                                apps by hand
+                            </div>
+                            <div class="pricing__item__price">
+                                10
+                                <div class="pricing__item__price__info">
+                                    $
+                                    <p>Per Month</p>
+                                </div>
+                            </div>
+                            <div class="pricing__item__features">
+                                <a href="#">Pricing Feature</a>
+                                <a href="#">Pricing Feature</a>
+                                <a href="#">Pricing Feature</a>
+                                <a href="#">Pricing Feature</a>
+                                <a href="#">Pricing Feature</a>
+                            </div>
+                            <div class="pricing__item__btn">
+                                <a href="#">Order Now</a>
+                            </div>
+                        </div>
+                        <div class="pricing__item">
+                            <div class="pricing__item__title">
+                                BUSINESS
+                            </div>
+                            <div class="pricing__item__text">
+                                Organize across all <br>
+                                apps by hand
+                            </div>
+                            <div class="pricing__item__price">
+                                99
+                                <div class="pricing__item__price__info">
+                                    $
+                                    <p>Per Month</p>
+                                </div>
+                            </div>
+                            <div class="pricing__item__features">
+                                <a href="#">Pricing Feature</a>
+                                <a href="#">Pricing Feature</a>
+                                <a href="#">Pricing Feature</a>
+                                <a href="#">Pricing Feature</a>
+                                <a href="#">Pricing Feature</a>
+                            </div>
+                            <div class="pricing__item__btn">
+                                <a href="#">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="page__about">
+                <div class="about__container _container">
+                    <div class="about__title">Contact Us</div>
+                    <div class="about__text">Most calendars are designed for teams. <br>
+                        Slate is designed for freelancers</div>
+                    <div class="about__form__map">
+                        <div class="about__form">
+                            <h3>Contact Us</h3>
+                            <form action="" class="form__about">
+                                <input type="text" placeholder="Your Name">
+                                <input type="email" placeholder="Your Email">
+                                <textarea name="comment" cols="40" rows="3" placeholder="Your Message"></textarea>
+                                <button type="form_btn">Send</button>
+                            </form>
+                        </div>
+                        <div class="about__map">
+                            <div class="about__map__info">
+                                <div class="about__map__info__items">
+                                    <img src="./img/icons/map_1.svg" alt="" class="about__map__info__items__icon">
+                                    <div class="about__map__info__items__text">
+                                        6386 Spring St undefined Anchorage, <br>
+                                        Georgia 12473 United States
+                                    </div>
+                                </div>
+                                <div class="about__map__info__items">
+                                    <img src="./img/icons/map2.svg" alt="" class="about__map__info__items__icon">
+                                    <div class="about__map__info__items__text">
+                                        (843) 555-0130
+                                    </div>
+                                </div>
+                                <div class="about__map__info__items">
+                                    <img src="./img/icons/map3.svg" alt="" class="about__map__info__items__icon">
+                                    <div class="about__map__info__items__text">
+                                        willie.jennings@example.com
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="about__google__map">
+                                <iframe width="516" height="323" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCbtbCR7ytjHHEXkUWjI7SWdSXhOwNZ18w
+    &q=Space+Needle,Seattle+WA">
+                                </iframe>
+                            </div>
+                            <div class="about__map__soc">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 24 24"
+                                    style="fill: #2091F9;transform: ;msFilter:;">
+                                    <path
+                                        d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z">
+                                    </path>
+                                </svg>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 24 24"
+                                    style="fill: #2091F9;transform: ;msFilter:;">
+                                    <path
+                                        d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h8.615v-6.96h-2.338v-2.725h2.338v-2c0-2.325 1.42-3.592 3.5-3.592.699-.002 1.399.034 2.095.107v2.42h-1.435c-1.128 0-1.348.538-1.348 1.325v1.735h2.697l-.35 2.725h-2.348V21H20a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1z">
+                                    </path>
+                                </svg>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 24 24"
+                                    style="fill: #2091F9;transform: ;msFilter:;">
+                                    <path
+                                        d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM8.339 18.337H5.667v-8.59h2.672v8.59zM7.003 8.574a1.548 1.548 0 1 1 0-3.096 1.548 1.548 0 0 1 0 3.096zm11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387 2.704 0 3.203 1.778 3.203 4.092v4.71z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container _container">
+                <div class="footer__body">
+                    <div class="footer__items">
+                        <div class="footer__items__title">Pages</div>
+                        <div class="footer__items__link">
+                            <a href="#">Home</a>
+                            <a href="#">Pricing</a>
+                            <a href="#">Product</a>
+                            <a href="#">About</a>
+                            <a href="#">Contact</a>
+                        </div>
+                    </div>
+                    <div class="footer__items">
+                        <div class="footer__items__title">Tomothy</div>
+                        <div class="footer__items__link">
+                            <a href="#">Eleanor Edwards</a>
+                            <a href="#">Ted Robertson</a>
+                            <a href="#">Annette Russell</a>
+                            <a href="#">Jennie Mckinney</a>
+                            <a href="#">Gloria Richards</a>
+                        </div>
+                    </div>
+                    <div class="footer__items">
+                        <div class="footer__items__title">Jane Black</div>
+                        <div class="footer__items__link">
+                            <a href="#">Philip Jones</a>
+                            <a href="#">Product</a>
+                            <a href="#">Colleen Russell</a>
+                            <a href="#">Marvin Hawkins</a>
+                            <a href="#">Bruce Simmmons</a>
+                        </div>
+                    </div>
+                    <div class="footer__items last__item">
+                        <a href="#" class="footer__adr">7480 Mockingbird Hill undefined</a>
+                        <a href="phone" class="footer__phone">(239) 555-0108</a>
+                        <div class="footer__soc">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40.99" height="40.99" viewBox="0 0 24 24"
+                                style="fill: rgb(255, 255, 255);transform: ;msFilter:;">
+                                <path
+                                    d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z">
+                                </path>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40.99" height="40.99" viewBox="0 0 24 24"
+                                style="fill: rgb(255, 255, 255);transform: ;msFilter:;">
+                                <path
+                                    d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h8.615v-6.96h-2.338v-2.725h2.338v-2c0-2.325 1.42-3.592 3.5-3.592.699-.002 1.399.034 2.095.107v2.42h-1.435c-1.128 0-1.348.538-1.348 1.325v1.735h2.697l-.35 2.725h-2.348V21H20a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1z">
+                                </path>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40.99" height="40.99" viewBox="0 0 24 24"
+                                style="fill: rgb(255, 255, 255);transform: ;msFilter:;">
+                                <path
+                                    d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM8.339 18.337H5.667v-8.59h2.672v8.59zM7.003 8.574a1.548 1.548 0 1 1 0-3.096 1.548 1.548 0 0 1 0 3.096zm11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387 2.704 0 3.203 1.778 3.203 4.092v4.71z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./js/js.js"></script>
+</body>
+
+</html>
